@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+h1 {
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+#pokemon-img {
+  width: 200px;
+  filter: brightness(0) saturate(100%);
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 8px;
+  width: 80%;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.score-area {
+  margin-top: 20px;
+}

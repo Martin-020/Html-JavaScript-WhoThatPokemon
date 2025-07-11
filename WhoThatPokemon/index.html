@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Who's That Pokémon?</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- =======================================================
+  * Project Name: Who's That Pokémon?
+  * Updated: 11 Juli 2025
+  * Author: Martin Hidayat Rihwan
+  * Github: https://github.com/Martin-020
+  ======================================================== -->
+</head>
+<body>
+  <div class="container">
+    <h1>Who's That Pokémon?</h1>
+
+    <div class="game-area">
+      <img id="pokemon-img" src="" alt="Siluet Pokémon" />
+      <input type="text" id="guess-input" placeholder="Tebak nama Pokémon..." />
+      <button onclick="checkGuess()">Tebak!</button>
+      <p id="result"></p>
+    </div>
+
+    <div class="score-area">
+      <p>Skor: <span id="score">0</span></p>
+      <p>Nyawa: <span id="lives">3</span></p>
+      <button onclick="nextPokemon()">Pokémon Selanjutnya</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
