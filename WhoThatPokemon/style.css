@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
 }
 
@@ -16,25 +16,39 @@ h1 {
   margin-bottom: 20px;
 }
 
-#pokemon-img {
-  width: 200px;
+img {
+  width: 250px;
+  margin: 20px 0;
   filter: brightness(0) saturate(100%);
-  margin-bottom: 15px;
-}
-
-input {
-  padding: 8px;
-  width: 80%;
-  font-size: 16px;
 }
 
 button {
-  padding: 8px 16px;
-  margin-top: 10px;
+  padding: 10px 15px;
+  margin: 10px 5px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.score-area {
-  margin-top: 20px;
+#choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#choices button {
+  background: #444;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+}
+
+#choices button:hover {
+  background-color: #666;
+}
+
+.hidden {
+  display: none;
 }

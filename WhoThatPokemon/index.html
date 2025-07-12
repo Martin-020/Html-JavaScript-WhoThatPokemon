@@ -16,17 +16,21 @@
   <div class="container">
     <h1>Who's That Pokémon?</h1>
 
-    <div class="game-area">
-      <img id="pokemon-img" src="" alt="Siluet Pokémon" />
-      <input type="text" id="guess-input" placeholder="Tebak nama Pokémon..." />
-      <button onclick="checkGuess()">Tebak!</button>
-      <p id="result"></p>
+    <div id="difficulty-selection">
+      <p>Pilih Tingkat Kesulitan:</p>
+      <button onclick="startGame('easy')">Easy</button>
+      <button onclick="startGame('medium')">Medium</button>
+      <button onclick="startGame('hard')">Hard</button>
     </div>
 
-    <div class="score-area">
-      <p>Skor: <span id="score">0</span></p>
-      <p>Nyawa: <span id="lives">3</span></p>
-      <button onclick="nextPokemon()">Pokémon Selanjutnya</button>
+    <div class="game-area hidden" id="game-area">
+      <p>Timer: <span id="timer">15</span>s</p>
+      <img id="pokemon-img" src="" alt="Siluet Pokémon" />
+
+      <div id="choices"></div>
+
+      <p id="result"></p>
+      <p>Skor: <span id="score">0</span> | Nyawa: <span id="lives">3</span></p>
     </div>
   </div>
 
